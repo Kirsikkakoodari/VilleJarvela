@@ -63,19 +63,33 @@
 
     <!-- Replace with your Access Key -->
     <input type="hidden" name="access_key" value="448fe54a-4f3d-4814-851c-e33751100c4c">
+                    <div class="formbold-mb-5">
+                        <label for="name">Nimi/yritys:</label>
+                        <input type="text" id="name" name="name" required class="formbold-form-input">
+                    </div>
 
-    <!-- Form Inputs. Each input must have a name="" attribute -->
-    <input type="text" name="Nimi" required>
-    <input type="email" name="Sähköposti" required>
-    <input type="phonenumber" name="Puhelin" required>
-    <textarea name="Viesti" required></textarea>
+                    <div class="formbold-mb-5">
+                        <label for="email">Sähköposti:</label>
+                        <input type="email" id="email" name="email" required class="formbold-form-input">
+                    </div>
 
-    <!-- Honeypot Spam Protection -->
-    <input type="checkbox" name="Checkbox" class="hidden" style="display: none;" required>
-    <p>Raksittamalla hyväksyt että voimme käyttää yllä annettuja tietoja ottaaksemme teihin yhteyttä. Älä jaa koskaan arkaluonteisia tietoja (luottokortin numerot, henkilötunnukset, salasanat) tällä lomakkeella.</p>
-   
+                    <div class="formbold-mb-5">
+                        <label for="phone">Puhelinnumero:</label>
+                        <input type="tel" id="phone" name="phone" required class="formbold-form-input">
+                    </div>
 
-    <button type="submit">Submit Form</button>
+                    <div class="formbold-mb-5">
+                        <label for="viesti">Viesti:</label>
+                        <textarea name="viesti" id="viesti" cols="30" rows="10" required class="formbold-form-input2"></textarea>  
+                        
+                    </div>
+            
+        
+                    <div>
+                        <button class="formbold-btn">Lähetä</button>
+                    </div>
+                </form>
+    <p>Lähettämällä lomakkeen hyväksyt että voimme käyttää yllä annettuja tietoja ottaaksemme teihin yhteyttä. Älä jaa koskaan arkaluonteisia tietoja (luottokortin numerot, henkilötunnukset, salasanat) tällä lomakkeella.</p>
 
                 </form>
             </div>
